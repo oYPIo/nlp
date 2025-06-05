@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "8000:80"
+    environment:
+      - MODEL_PATH=/app/service/model/mt5_fr2en_checkpoint-500
+      - APP_MODULE=service.app:app

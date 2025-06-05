@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: mltest
+      POSTGRES_USER: mluser
+      POSTGRES_PASSWORD: mlpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=/app/service/model/mt5_fr2en_checkpoint-500
+      - APP_MODULE=service.app:app
+    depends_on:
+      - db
+
+  etl:
+    build: ./etl
+    depends_on:
+      - db
+      - api

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "iasa-nlp-course"
+name = "iasa-nlp-course-labs"
 version = "0.1.0"
 description = ""
 authors = ["VSydorskyy <vladimirsydorskyy@gmail.com>"]
@@ -43,8 +43,12 @@ torchdata = "0.7.1"
 evaluate = "^0.4.3"
 bert-score = "^0.3.13"
 sentencepiece = "^0.2.0"
-accelerate = "0.23.0"
-peft = "^0.15.2"
+torch = "^2.7.0"
+accelerate = "^0.29.2"
+peft = "^0.10.0"
+bitsandbytes = "^0.43.0"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.3"
 
 [build-system]
 requires = ["poetry-core"]

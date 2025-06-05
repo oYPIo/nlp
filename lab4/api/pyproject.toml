@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lab4"
+version = "0.1.0"
+description = ""
+authors = ["oYPIo <voice2of2reason@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.115.12"
+transformers = "^4.52.4"
+torch = "^2.7.1"
+sentencepiece = "^0.2.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

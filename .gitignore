@@ -1,5 +1,6 @@
 creds.json
 **/train.json
+.venv
 
 wandb
 models
