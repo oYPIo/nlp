@@ -13,7 +13,9 @@ services:
   api:
     build: ./api
     ports:
-      - "8000:8000"
+      - "8000:80"
+    volumes:
+      - ./model/mt5_fr2en_checkpoint-500:/app/service/model/mt5_fr2en_checkpoint-500
     environment:
       - MODEL_PATH=/app/service/model/mt5_fr2en_checkpoint-500
       - APP_MODULE=service.app:app

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "lab4"
+version = "0.1.0"
+description = ""
+authors = ["oYPIo <voice2of2reason@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+fastapi = "^0.115.12"
+sentencepiece = "^0.2.0"
+ipykernel = "^6.29.5"
+torch = "*"
+awq = {git = "https://github.com/mit-han-lab/llm-awq.git"}
+transformers = "4.46.0"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

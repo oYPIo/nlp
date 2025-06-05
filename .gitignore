@@ -2,5 +2,10 @@ creds.json
 **/train.json
 .venv
 
+
 wandb
 models
+
+lab4/model
+lab4/.idea
+lab4/pgdata
