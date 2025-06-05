@@ -20,4 +20,4 @@ async def predict(request: Request):
         do_sample=True,
         temperature=0.4
     )
-    return outputs
+    return {"prediction": outputs[0]['generated_text']}
