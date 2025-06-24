@@ -5,6 +5,9 @@ creds.json
 
 wandb
 models
+logs
+project/LLM/datasets
+tt.*
 
 lab4/model
 lab4/.idea
